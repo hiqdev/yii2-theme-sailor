@@ -1,0 +1,10 @@
+package:
+    type:           yii2-extension
+    name:           yii2-theme-sailor
+    title:          Sailor theme for hiqdev/yii2-thememanager
+    headline:       Yii2 Hyde Theme
+    keywords:       sailor, theme, extension, yii2
+    namespace:      hiqdev\themes\sailor
+    description:    |
+        This package provides [Sailor theme](https://bootstrapmade.com/sailor-free-bootstrap-theme/)
+        for [Yii2 framework](http://yiiframework.com).
