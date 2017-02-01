@@ -13,6 +13,8 @@ Yii2 Hyde Theme
 This package provides [Sailor theme](https://bootstrapmade.com/sailor-free-bootstrap-theme/)
 for [Yii2 framework](http://yiiframework.com).
 
+![Screenshot](https://bootstrapmade.com/wp-content/themefiles/Sailor/800.png)
+
 ## Installation
 
 The preferred way to install this yii2-extension is through [composer](http://getcomposer.org/download/).
