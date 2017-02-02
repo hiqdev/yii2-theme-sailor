@@ -6,7 +6,7 @@ use hiqdev\themes\flat\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 
 ?>
-<header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+<header>
     <div class="top">
         <div class="container">
             <div class="row">
@@ -55,3 +55,20 @@ use yii\widgets\Breadcrumbs;
     </div>
 </header>
 
+<?php if (!Yii::$app->themeManager->isHomePage()) : ?>
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <?= Breadcrumbs::widget([
+                        'homeLink' => ['label' => '<i class="fa fa-home"></i>', 'url' => '/'],
+                        'encodeLabels' => false,
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                    ]) ?>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif ?>
+
+<?= $content ?>
