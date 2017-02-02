@@ -1,9 +1,34 @@
-<?= \hiqdev\thememanager\widgets\Flashes::widget() ?>
+<?php
 
-<?php if (Yii::$app->themeManager->isHomePage()) : ?>
-    <?= $content ?>
+use hiqdev\themes\sailor\widgets\Callaction;
+use hiqdev\themes\sailor\widgets\Featured;
+use yii\widgets\Breadcrumbs;
+
+?>
+<?php if (!Yii::$app->themeManager->isHomePage()) : ?>
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <?= Breadcrumbs::widget([
+                        'homeLink' => ['label' => '<i class="fa fa-home"></i>', 'url' => '/'],
+                        'encodeLabels' => false,
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                    ]) ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="container">
+            <?= $content ?>
+        </div>
+    </section>
 <?php else: ?>
-    <section id="<?= isset($this->params['contentId']) ? $this->params['contentId'] : 'content' ?>" class="container">
+    <?= Featured::widget() ?>
+    <?= Callaction::widget() ?>
+    <section id="content">
         <?= $content ?>
     </section>
 <?php endif ?>
+

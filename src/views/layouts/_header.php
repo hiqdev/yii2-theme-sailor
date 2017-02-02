@@ -3,6 +3,8 @@
 use hiqdev\thememanager\menus\AbstractMainMenu;
 use hiqdev\thememanager\widgets\LogoLink;
 use hiqdev\themes\flat\widgets\Menu;
+use hiqdev\themes\sailor\widgets\Callaction;
+use hiqdev\themes\sailor\widgets\Featured;
 use yii\widgets\Breadcrumbs;
 
 ?>
@@ -55,20 +57,3 @@ use yii\widgets\Breadcrumbs;
     </div>
 </header>
 
-<?php if (!Yii::$app->themeManager->isHomePage()) : ?>
-    <section id="inner-headline">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <?= Breadcrumbs::widget([
-                        'homeLink' => ['label' => '<i class="fa fa-home"></i>', 'url' => '/'],
-                        'encodeLabels' => false,
-                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-                    ]) ?>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php endif ?>
-
-<?= $content ?>
