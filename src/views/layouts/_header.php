@@ -1,6 +1,7 @@
 <?php
 
 use hiqdev\thememanager\menus\AbstractMainMenu;
+use hiqdev\thememanager\widgets\LogoLink;
 use hiqdev\themes\flat\widgets\Menu;
 use yii\widgets\Breadcrumbs;
 
@@ -36,9 +37,13 @@ use yii\widgets\Breadcrumbs;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="" width="199" height="52"/>
-                </a>
+                <?= LogoLink::widget([
+                    'image' => '@hiqdev/themes/sailor/assets/img/logo.png',
+                    'imageOptions' => [
+                        'width' => '199',
+                        'height' => '152',
+                    ]
+                ]) ?>
             </div>
             <div class="navbar-collapse collapse">
                 <?= AbstractMainMenu::widget([], [
