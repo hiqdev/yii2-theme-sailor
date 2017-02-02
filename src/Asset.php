@@ -28,7 +28,6 @@ class Asset extends AssetBundle
      * {@inheritdoc}
      */
     public $js = [
-        'js/custom.js',
     ];
 
     /**
