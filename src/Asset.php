@@ -28,6 +28,12 @@ class Asset extends AssetBundle
      * {@inheritdoc}
      */
     public $js = [
+        'js/modernizr.custom.js',
+        'js/jquery.easing.1.3.js',
+        'js/jquery.appear.js',
+        'js/uisearch.js',
+        'js/classie.js',
+        'js/custom.js',
     ];
 
     /**
@@ -35,5 +41,7 @@ class Asset extends AssetBundle
      */
     public $depends = [
         BootstrapPluginAsset::class,
+        FlexSliderAsset::class,
+        CubePortfolioAsset::class,
     ];
 }
