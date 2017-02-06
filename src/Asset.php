@@ -20,8 +20,8 @@ class Asset extends AssetBundle
      */
     public $css = [
         'css/style.css',
-        'skins/default.css',
-        'bodybg/bg1.css',
+        'skins/blue.css',
+        'bodybg/bg2.css',
     ];
 
     /**
