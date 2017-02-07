@@ -169,8 +169,10 @@ $(function () {
 
 				
 	//search
-	new UISearch( document.getElementById( 'sb-search' ) );
-	
+    if (typeof UISearch != "undefined" && document.getElementById( 'sb-search' ).length ) {
+        new UISearch( document.getElementById( 'sb-search' ) );
+    }
+
 	//cube portfolio
 	    var gridContainer = $('#grid-container'),
         filtersContainer = $('#filters-container');
