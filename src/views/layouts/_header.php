@@ -3,9 +3,7 @@
 use hiqdev\thememanager\menus\AbstractMainMenu;
 use hiqdev\thememanager\widgets\LogoLink;
 use hiqdev\themes\flat\widgets\Menu;
-use hiqdev\themes\sailor\widgets\Callaction;
-use hiqdev\themes\sailor\widgets\Featured;
-use yii\widgets\Breadcrumbs;
+use yii\helpers\Html;
 
 ?>
 <header>
@@ -14,18 +12,17 @@ use yii\widgets\Breadcrumbs;
             <div class="row">
                 <div class="col-md-6">
                     <ul class="topleft-info">
-                        <li><i class="fa fa-phone"></i> +62 088 999 123</li>
+                        <li><i class="fa fa-envelope-o"></i>
+                            24/7 <?= Yii::t('hisite', 'tech support') ?> <?= Html::mailto(Yii::$app->params['supportEmail'], Yii::$app->params['supportEmail']) ?>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <div id="sb-search" class="sb-search">
-                        <form>
-                            <input class="sb-search-input" placeholder="Enter your search term..." type="text"
-                                   value="" name="search" id="search">
-                            <input class="sb-search-submit" type="submit" value="">
-                            <span class="sb-icon-search" title="Click to start searching"></span>
-                        </form>
-                    </div>
+                    <?= \hiqdev\thememanager\menus\AbstractNavbarMenu::widget([], [
+                        'options' => [
+                            'class' => 'topleft-info list-inline pull-right',
+                        ],
+                    ]) ?>
                 </div>
             </div>
         </div>
@@ -39,13 +36,7 @@ use yii\widgets\Breadcrumbs;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <?= LogoLink::widget([
-                    'image' => '@hiqdev/themes/sailor/assets/img/logo.png',
-                    'imageOptions' => [
-                        'width' => '199',
-                        'height' => '152',
-                    ]
-                ]) ?>
+                <?= LogoLink::widget() ?>
             </div>
             <div class="navbar-collapse collapse">
                 <?= AbstractMainMenu::widget([], [
