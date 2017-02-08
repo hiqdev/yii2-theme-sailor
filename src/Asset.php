@@ -31,8 +31,6 @@ class Asset extends AssetBundle
         'js/modernizr.custom.js',
         'js/jquery.easing.1.3.js',
         'js/jquery.appear.js',
-        'js/uisearch.js',
-        'js/classie.js',
         'js/custom.js',
     ];
 
