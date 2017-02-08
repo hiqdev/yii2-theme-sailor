@@ -1,11 +1,9 @@
 <?php
 
-use hiqdev\themes\sailor\widgets\Callaction;
-use hiqdev\themes\sailor\widgets\Featured;
 use yii\widgets\Breadcrumbs;
 
 ?>
-<?php if (!Yii::$app->themeManager->isHomePage()) : ?>
+<?php if (!Yii::$app->themeManager->isHomePage() && empty($this->blocks['subHeader'])) : ?>
     <section id="inner-headline">
         <div class="container">
             <div class="row">
@@ -19,16 +17,14 @@ use yii\widgets\Breadcrumbs;
             </div>
         </div>
     </section>
-    <section id="content">
-        <div class="container">
-            <?= $content ?>
-        </div>
-    </section>
 <?php else: ?>
-    <?= Featured::widget() ?>
-    <?= Callaction::widget() ?>
-    <section id="content">
-        <?= $content ?>
+    <section class="callaction">
+        <?= $this->blocks['subHeader'] ?>
     </section>
 <?php endif ?>
+<section id="content">
+    <div class="container">
+        <?= $content ?>
+    </div>
+</section>
 
