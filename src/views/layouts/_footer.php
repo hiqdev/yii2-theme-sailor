@@ -6,6 +6,7 @@ use hiqdev\thememanager\widgets\CopyrightYears;
 use hiqdev\thememanager\widgets\OrganizationLink;
 use hiqdev\thememanager\widgets\SocialLinks;
 use hiqdev\themes\flat\widgets\Menu;
+use yii\helpers\Html;
 
 ?>
 <footer>
@@ -15,7 +16,7 @@ use hiqdev\themes\flat\widgets\Menu;
                 <div class="widget">
                     <h4><?= Yii::t('hiqdev:themes:sailor', 'Get in touch with us') ?></h4>
                     <p>
-                        <i class="icon-envelope-alt"></i> email@domainname.com
+                        <i class="icon-envelope-alt"></i> <?= Html::mailto(Yii::$app->params['supportEmail'], Yii::$app->params['supportEmail']) ?>
                     </p>
                 </div>
             </div>
