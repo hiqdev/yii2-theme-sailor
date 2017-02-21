@@ -14,13 +14,7 @@ use hiqdev\themes\flat\widgets\Menu;
             <div class="col-sm-3 col-lg-3">
                 <div class="widget">
                     <h4><?= Yii::t('hiqdev:themes:sailor', 'Get in touch with us') ?></h4>
-                    <address>
-                        <strong>Sailor company Inc</strong><br>
-                        Sailor suite room V124, DB 91<br>
-                        Someplace 71745 Earth
-                    </address>
                     <p>
-                        <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
                         <i class="icon-envelope-alt"></i> email@domainname.com
                     </p>
                 </div>
@@ -32,22 +26,10 @@ use hiqdev\themes\flat\widgets\Menu;
                 </div>
 
             </div>
-            <div class="col-sm-3 col-lg-3">
+            <div class="col-sm-6 col-lg-6">
                 <div class="widget">
                     <h4><?= Yii::t('hiqdev:themes:sailor', 'Pages') ?></h4>
                     <?= AbstractMainMenu::widget([], ['options' => ['class' => 'link-list']]) ?>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="widget">
-                    <h4>Newsletter</h4>
-                    <p>Fill your email and sign up for monthly newsletter to keep updated</p>
-                    <div class="form-group multiple-form-group input-group">
-                        <input type="email" name="email" class="form-control">
-                        <span class="input-group-btn">
-                            <button type="button" class="btn btn-theme btn-add">Subscribe</button>
-                        </span>
-                    </div>
                 </div>
             </div>
         </div>
