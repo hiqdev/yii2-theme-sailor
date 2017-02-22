@@ -22,6 +22,7 @@ class Asset extends AssetBundle
         'css/style.css',
         'skins/blue.css',
         'bodybg/bg2.css',
+        'css/custom.css',
     ];
 
     /**
