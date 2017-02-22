@@ -1,3 +1,10 @@
 header .top ul.topleft-info li {
     font-size: 13px;
 }
+header .top ul.topleft-info li a,
+header .top ul.topleft-info li a:hover,
+header .top ul.topleft-info li a:focus,
+header .top ul.topleft-info li a:active
+{
+    text-decoration: none;
+}
