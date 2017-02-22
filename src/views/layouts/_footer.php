@@ -42,7 +42,7 @@ use yii\helpers\Html;
                     <div class="copyright">
                         <p>
                             &copy; <?= CopyrightYears::widget() ?>. <?= OrganizationLink::widget() ?>
-                            <?= Yii::t('hiqdev:themes:flat', 'All rights reserved.') ?>
+                            <?= Yii::t('hisite', 'All rights reserved.') ?>
                         </p>
                         <div class="credits">
                             <!--
