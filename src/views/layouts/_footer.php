@@ -5,7 +5,6 @@ use hiqdev\thememanager\menus\AbstractMainMenu;
 use hiqdev\thememanager\widgets\CopyrightYears;
 use hiqdev\thememanager\widgets\OrganizationLink;
 use hiqdev\thememanager\widgets\SocialLinks;
-use hiqdev\themes\flat\widgets\Menu;
 use yii\helpers\Html;
 
 ?>

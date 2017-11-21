@@ -2,11 +2,10 @@
 
 /** @var object $cart */
 /** @var object $widget */
-
 $positionsCount = count($cart->positions);
-$this->registerCss("#top-cart span.cart-count { background-color: #ccc; padding: 0 5px; color: #fff;}");
+$this->registerCss('#top-cart span.cart-count { background-color: #ccc; padding: 0 5px; color: #fff;}');
 if ($positionsCount > 0) {
-    $this->registerCss("#top-cart span.cart-count { background-color: #FF4081!important; padding: 0 5px;}");
+    $this->registerCss('#top-cart span.cart-count { background-color: #FF4081!important; padding: 0 5px;}');
 }
 ?>
 <span id="top-cart">

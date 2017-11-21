@@ -1,5 +1,4 @@
-Yii2 Hyde Theme
-===============
+# Yii2 Sailor Theme
 
 **Sailor theme for hiqdev/yii2-thememanager**
 

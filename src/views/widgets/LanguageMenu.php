@@ -4,7 +4,6 @@ use yii\bootstrap\BootstrapPluginAsset;
 use yii\helpers\Html;
 
 /** @var array $items */
-
 BootstrapPluginAsset::register($this);
 
 $this->registerJs(<<<'JS'
@@ -21,7 +20,7 @@ $('#languageChooser').popover({
 });
 JS
 );
-$this->registerCss("
+$this->registerCss('
 .language-popover .popover-content ul {
     margin: 0;
     padding: 0;
@@ -36,7 +35,7 @@ $this->registerCss("
 .language-popover .popover-content li a:hover { 
     text-decoration: none;    
 }
-");
+');
 ?>
 <a href="#" data-toggle="popover" id="languageChooser" data-original-title="" title="">
     <?= strtoupper(substr($language, 0, 2)) ?> <span class="caret"></span>

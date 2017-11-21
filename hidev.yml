@@ -2,7 +2,7 @@ package:
     type:           yii2-extension
     name:           yii2-theme-sailor
     title:          Sailor theme for hiqdev/yii2-thememanager
-    headline:       Yii2 Hyde Theme
+    headline:       Yii2 Sailor Theme
     keywords:       sailor, theme, extension, yii2
     namespace:      hiqdev\themes\sailor
     description:    |

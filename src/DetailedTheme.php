@@ -1,13 +1,14 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: tofid
- * Date: 26.01.17
- * Time: 17:23
+ * Sailor theme for hiqdev/yii2-thememanager
+ *
+ * @link      https://github.com/hiqdev/yii2-theme-sailor
+ * @package   yii2-theme-sailor
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiqdev\themes\sailor;
-
 
 class DetailedTheme extends \hiqdev\thememanager\DetailedTheme
 {

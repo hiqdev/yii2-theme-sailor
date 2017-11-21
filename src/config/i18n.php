@@ -1,12 +1,11 @@
 <?php
-
-/*
- * Agency Theme for hiqdev/yii2-thememanager
+/**
+ * Sailor theme for hiqdev/yii2-thememanager
  *
- * @link      https://github.com/hiqdev/yii2-theme-agency
- * @package   yii2-theme-agency
+ * @link      https://github.com/hiqdev/yii2-theme-sailor
+ * @package   yii2-theme-sailor
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2017, HiQDev (http://hiqdev.com/)
  */
 
 return [
