@@ -8,3 +8,7 @@ header .top ul.topleft-info li a:active
 {
     text-decoration: none;
 }
+
+#bulkcheckform-zones label {
+    color: #666;
+}
